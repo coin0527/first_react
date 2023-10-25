@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: white;
+}
 body {
   background-color: lightgray;
   color: white;
@@ -15,9 +18,61 @@ body {
   margin: 100px auto;
   padding: 20px;
 }
-.box header {
+.wrap header {
   width: 100%;
   height: 30px;
   display: flex;
   justify-content: space-between;
 }
+.imgwrap {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  margin: 25px auto;
+  background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODEwMjRfMTkz%2FMDAxNTQwMzY1Mjc4Mzcz._-4dr-BiC6ykDHCa0c10y60iJpPSu_efyaO--KR9W-4g.qZEW0it3k0pnsFKlIzXhOQC36nnSfTwDwSyHwA5Yap0g.PNG.arie98%2F19.png&type=a340");
+}
+.musicBar {
+  border: 1px solid white;
+  margin-top: 30px;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  margin-top: 10px;
+}
+h3,
+h4,
+.bottom {
+  text-align: center;
+}
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.playlist {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 20px;
+  background-color: #eee;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: bisque;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.iconName {
+  margin-right: 90px;
+  font-size: 14px;
+}
+
+/* 문제점 */
+/* 메뉴버튼 활성화 아직 못함 */

@@ -7,6 +7,7 @@ import { Ex06 } from "./components/ex06/Ex06";
 import { Ex07 } from "./components/ex07/Ex07";
 import { Mainbtn } from "./components/exam01/Mainbtn";
 import { Ex08 } from "./components/ex08/Ex08";
+import { Ex09 } from "./components/ex09/Ex09";
 const App = () => {
   return (
     <div>
@@ -19,7 +20,8 @@ const App = () => {
         // <Ex06 />
         // <Ex07 />
         //<Mainbtn />
-        <Ex08 />
+        // <Ex08 />
+        <Ex09 />
       }
     </div>
   );
