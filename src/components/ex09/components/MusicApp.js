@@ -1,15 +1,4 @@
-import {
-  faBackward,
-  faForward,
-  faForwardStep,
-  faRepeat,
-  faShuffle,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { Header } from "./Header";
 import { Cover } from "./Cover";
 import { BtnWrap } from "./BtnWrap";
@@ -28,6 +17,7 @@ const Container = styled.div`
   width: 100%;
   background-color: #1d1d1d;
   padding: 50px 20px;
+  position: relative;
 `;
 // header end
 
