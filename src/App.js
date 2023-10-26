@@ -5,9 +5,9 @@ import { PageEx } from "./components/ex04/PageEx";
 import { Ex05 } from "./components/ex05/Ex05";
 import { Ex06 } from "./components/ex06/Ex06";
 import { Ex07 } from "./components/ex07/Ex07";
-import { Mainbtn } from "./components/exam01/Mainbtn";
 import { Ex08 } from "./components/ex08/Ex08";
 import { Ex09 } from "./components/ex09/Ex09";
+import { Ex11 } from "./components/ex11/Ex11";
 const App = () => {
   return (
     <div>
@@ -19,9 +19,9 @@ const App = () => {
         // <Ex05 />
         // <Ex06 />
         // <Ex07 />
-        //<Mainbtn />
         // <Ex08 />
-        <Ex09 />
+        // <Ex09 />
+        <Ex11 />
       }
     </div>
   );
