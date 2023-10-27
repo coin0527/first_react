@@ -20,6 +20,11 @@ export const GlobalStyle = createGlobalStyle`
     body{
         font-family: 'Noto Sans KR', sans-serif;
     }
+    a
+    {
+      text-decoration: none;
+      color: #1d1d1d;
+    }
 `;
 
 // 전체영역에서 사용할수있는 스타일 처리법
