@@ -35,10 +35,10 @@ export const Mainpage = () => {
       </Banner>
       <Section>
         <Con>
-          <Link to={"/sub01"}></Link>
+          <Link to={"/subs01"}></Link>
         </Con>
         <Con>
-          <Link to={"/sub02"}></Link>
+          <Link to={"/subs02"}></Link>
         </Con>
       </Section>
     </div>
