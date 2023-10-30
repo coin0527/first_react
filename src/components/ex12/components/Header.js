@@ -31,10 +31,10 @@ export const Header = () => {
       </Logo>
       <Nav>
         <li>
-          <Link to={"/Subs01"}> 메뉴 1</Link>
+          <Link to={"/Sub/0"}> 메뉴 1</Link>
         </li>
         <li>
-          <Link to={"/Subs02"}> 메뉴 2</Link>
+          <Link to={"/Sub/1"}> 메뉴 2</Link>
         </li>
       </Nav>
     </Sheader>

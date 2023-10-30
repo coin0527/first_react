@@ -25,8 +25,8 @@ const App = () => {
         // <Ex08 />
         // <Ex09 />
         // <Ex11 />
-        // <Ex12 />
-        <Application />
+        <Ex12 />
+        //<Application />
       }
     </div>
   );
