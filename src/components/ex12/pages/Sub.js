@@ -17,7 +17,7 @@ const Titleimage = styled.div`
   height: 400px;
   position: relative;
   margin: 0 400px;
-  background-image: url();
+  background-image: url(${(props) => props.$url}) no-repeat;
 `;
 const Paget = styled.div`
   margin-left: -250px;

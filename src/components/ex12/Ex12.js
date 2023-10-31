@@ -12,7 +12,6 @@ export const Ex12 = () => {
         <Route path="/" element={<Mainpage />} />
         <Route path="/sub/:id" element={<Sub />} />
         <Route path="/*" element={<Errorpages />} />
-        {/* subpage작업해야함 토요일 */}
       </Routes>
     </BrowserRouter>
   );
