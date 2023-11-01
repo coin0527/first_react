@@ -10,6 +10,7 @@ import { Ex09 } from "./components/ex09/Ex09";
 import { Ex11 } from "./components/ex11/Ex11";
 import { Ex12 } from "./components/ex12/Ex12";
 import { Ex13 } from "./components/ex13/Ex13";
+import { Ex14 } from "./components/ex14/Ex14";
 import { Application } from "./components/musicexam/Application";
 
 const App = () => {
@@ -27,7 +28,8 @@ const App = () => {
         // <Ex09 />
         // <Ex11 />
         //<Ex12 />
-        <Ex13 />
+        //<Ex13 />
+        <Ex14 />
         //<Application />
       }
     </div>

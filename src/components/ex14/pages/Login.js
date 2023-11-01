@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
-import { Message } from "../components/Message";
+import { Link } from "react-router-dom";
 
 const Wrap = styled.div`
   height: 100vh;
@@ -50,6 +50,14 @@ const Button = styled.button`
   opacity: ${(props) => (props.$isActive ? 1 : 0.5)};
   cursor: ${(props) => (props.$isActive ? "pointer" : "default")};
 `;
+const BottomWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  Link {
+    margin-right: 30px;
+  }
+`;
 
 export const Login = () => {
   const {
@@ -60,16 +68,12 @@ export const Login = () => {
     mode: "onChange",
   });
 
-  // console.log(isValid);
-  // 유효성 검사 후 boolean 값으로 반환함.
-
   console.log(errors?.username?.message);
-  // obtional chaining 연산자
 
   const loginHandler = (data) => {
-    console.log(data); // 객체의 형태로 반환함
-    //이벤트 함수 매개변수의 첫번째 자리는 유저가 입력한 내용을 객체형태로 반환함
+    console.log(data);
   };
+
   return (
     <Wrap>
       <Form onSubmit={handleSubmit(loginHandler)}>
@@ -82,9 +86,6 @@ export const Login = () => {
           type="text"
           placeholder="ID"
         />
-        {/* <span>{errors?.username?.message}</span> */}
-        {/* <Message message={errors?.username?.message} /> */}
-
         <Input
           {...register("password", {
             required: "패스워드는 필수입니다.",
@@ -93,28 +94,18 @@ export const Login = () => {
               message: "비밀번호는 8자리 이상 작성해야합니다.",
             },
             pattern: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-            // 문자, 숫자 같이 섞어쓰는 정규식
             message: "숫자 문자 같이 써야합니다.",
           })}
           type="password"
           placeholder="Password"
         />
-
         <Button $isActive={isValid}> 로그인 </Button>
+
+        <BottomWrap>
+          <Link to={"/signup"}>SignUp</Link>
+          <Link to={"/home"}>HOME</Link>
+        </BottomWrap>
       </Form>
     </Wrap>
   );
 };
-
-// Useform => 폼관련 패키지
-// const {register, handleSubmit, formState:{error, isValid}}
-
-//이때 register - input 태그 name 및 등록 역할담당
-// handleSubmit - form 태그 이벤트 등록
-// formState - form상태관리
-// errors - 유효성 검사 후 에러를 객체로 변환
-// isvalid - form상태가 유효한지 boolean값으로 전달
-
-// useForm({mode: "onchange"}) => form모드로 유효성 검사를 어떻게 처리할지 값을 작성 가능
-// <input {...register("name명", {required: ""})}
-// => input 값이 필수값인지 아닌지 boolean 및 문자열로 작성가능
