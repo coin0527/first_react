@@ -1,63 +1,14 @@
 import { useForm } from "react-hook-form";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
-
-const Wrap = styled.div`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-`;
-const Form = styled.form`
-  max-width: 450px;
-  width: 100%;
-  height: 550px;
-  border: 1px solid #dbdbdb;
-  margin-top: 18vh;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
-`;
-const Title = styled.div`
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-`;
-const Input = styled.input`
-  all: unset;
-  box-sizing: border-box;
-  width: 100%;
-  height: 50px;
-  border: 1px solid #dbdbdb;
-  border-radius: 10px;
-  padding: 0 15px;
-  margin-top: 10px;
-`;
-const Button = styled.button`
-  all: unset;
-  width: 100%;
-  height: 50px;
-  background-color: salmon;
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-  opacity: ${(props) => (props.$isActive ? 1 : 0.5)};
-  cursor: ${(props) => (props.$isActive ? "pointer" : "default")};
-`;
-const BottomWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  Link {
-    margin-right: 30px;
-  }
-`;
+import { ButtonUi } from "../components/ButtonUi";
+import {
+  Wrap,
+  Form,
+  Title,
+  Input,
+  BottomWrap,
+  Separ,
+} from "../components/loginstyled";
 
 export const Login = () => {
   const {
@@ -99,8 +50,13 @@ export const Login = () => {
           type="password"
           placeholder="Password"
         />
-        <Button $isActive={isValid}> 로그인 </Button>
+        <ButtonUi active={isValid} text={"로그인"} />
 
+        <Separ>
+          <span></span>
+          <b>또는</b>
+          <span></span>
+        </Separ>
         <BottomWrap>
           <Link to={"/signup"}>SignUp</Link>
           <Link to={"/home"}>HOME</Link>
