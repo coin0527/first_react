@@ -9,6 +9,7 @@ import {
   BottomWrap,
   Separ,
 } from "../components/loginstyled";
+import { ErrorMessage } from "../components/ErrorMessage";
 
 export const Signup = () => {
   const {
@@ -29,7 +30,7 @@ export const Signup = () => {
     <Wrap>
       <Form onSubmit={handleSubmit(loginHandler)}>
         <Title>Sign up</Title>
-
+        {/* 아이디 */}
         <Input
           {...register("username", {
             required: "아이디는 필수 입니다.",
@@ -37,6 +38,19 @@ export const Signup = () => {
           type="text"
           placeholder="ID"
         />
+        <ErrorMessage text={errors?.username?.message} />
+        {/* 이메일 */}
+        <Input {...register("email")} type="text" placeholder="이메일" />
+
+        {/* 이름 */}
+        <Input
+          {...register("name", { required: "이름은 필수입니다." })}
+          type="text"
+          placeholder="이름"
+        />
+        <ErrorMessage text={errors?.name?.message} />
+
+        {/* 패스워드 */}
         <Input
           {...register("password", {
             required: "패스워드는 필수입니다.",
@@ -50,6 +64,7 @@ export const Signup = () => {
           type="password"
           placeholder="Password"
         />
+        <ErrorMessage text={errors?.password?.message} />
         <ButtonUi active={isValid} text={"회원가입"} />
 
         <Separ>

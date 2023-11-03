@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Button } from "./loginstyled";
 
 export const Button = styled.button`
   all: unset;

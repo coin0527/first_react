@@ -34,20 +34,6 @@ export const Input = styled.input`
   padding: 0 15px;
   margin-top: 10px;
 `;
-export const Button = styled.button`
-  all: unset;
-  width: 100%;
-  height: 50px;
-  background-color: salmon;
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-  opacity: ${(props) => (props.$isActive ? 1 : 0.5)};
-  cursor: ${(props) => (props.$isActive ? "pointer" : "default")};
-`;
 export const BottomWrap = styled.div`
   display: flex;
   justify-content: space-between;
@@ -63,6 +49,7 @@ export const Separ = styled.div`
   display: flex;
   justify-content: space-between;
   span {
+    display: block;
     width: 40%;
     height: 1px;
     background-color: #dbdbdb;

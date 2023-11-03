@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { ButtonUi } from "../components/ButtonUi";
+import { ErrorMessage } from "../components/ErrorMessage";
 import {
   Wrap,
   Form,
@@ -37,6 +38,7 @@ export const Login = () => {
           type="text"
           placeholder="ID"
         />
+        <ErrorMessage text={errors?.username?.message} />
         <Input
           {...register("password", {
             required: "패스워드는 필수입니다.",
@@ -50,6 +52,8 @@ export const Login = () => {
           type="password"
           placeholder="Password"
         />
+        <ErrorMessage text={errors?.password?.message} />
+
         <ButtonUi active={isValid} text={"로그인"} />
 
         <Separ>
