@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div>
       {
-        // <PropsEx />
+        <PropsEx />
         // <MapFnEx></MapFnEx>
         // <IntroEx />
         // <PageEx />
@@ -29,7 +29,7 @@ const App = () => {
         // <Ex11 />
         //<Ex12 />
         //<Ex13 />
-        <Ex14 />
+        //<Ex14 />
         //<Application />
       }
     </div>
