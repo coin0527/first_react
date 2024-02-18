@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div>
       {
-        <PropsEx />
+        //<PropsEx />
         // <MapFnEx></MapFnEx>
         // <IntroEx />
         // <PageEx />
