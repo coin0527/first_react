@@ -11,13 +11,15 @@ import { Ex11 } from "./components/ex11/Ex11";
 import { Ex12 } from "./components/ex12/Ex12";
 import { Ex13 } from "./components/ex13/Ex13";
 import { Ex14 } from "./components/ex14/Ex14";
+import { Example22 } from "./components/ex15/Example22";
+import { Example24 } from "./components/ex15/Example24";
 import { Application } from "./components/musicexam/Application";
 
 const App = () => {
   return (
     <div>
       {
-        //<PropsEx />
+        // <PropsEx />
         // <MapFnEx></MapFnEx>
         // <IntroEx />
         // <PageEx />
@@ -31,6 +33,7 @@ const App = () => {
         //<Ex13 />
         //<Ex14 />
         //<Application />
+        <Example24 />
       }
     </div>
   );

@@ -11,10 +11,10 @@ export const FoodMenu = ({ menus }) => {
         <hr />
       </div>
       <div>
-        <h2> {menus[1].week}</h2>
-        <h3> {menus[1].breakfast}</h3>
-        <h3> {menus[1].lunch}</h3>
-        <h3> {menus[1].dinner}</h3>
+        <h2> {menus[2].week}</h2>
+        <h3> {menus[2].breakfast}</h3>
+        <h3> {menus[2].lunch}</h3>
+        <h3> {menus[2].dinner}</h3>
         <hr />
       </div>
     </>

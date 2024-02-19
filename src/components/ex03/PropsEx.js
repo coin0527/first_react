@@ -1,6 +1,7 @@
 import { FoodMenu } from "./FoodMenu";
 import { Intro } from "./Intro";
 
+// 배열은 항상 0번부터 시작해 ( index 값)
 const FoodMenus = [
   {
     week: "월요일",
