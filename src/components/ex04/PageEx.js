@@ -23,8 +23,7 @@ export const PageEx = () => {
       {site.map((look) => (
         <h3 key={look.id}>
           <a href={look.con} target="_blank">
-            {" "}
-            {look.name}{" "}
+            {look.name}
           </a>
         </h3>
       ))}

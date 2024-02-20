@@ -16,14 +16,16 @@ const users = [
   },
 ];
 
+// 배열안에 객체라고 부름
+
 export const IntroEx = () => {
   return (
     <div>
-      {users.map((man) => (
-        <div key={man.id}>
+      {users.map((sival) => (
+        <div key={sival.id}>
           <h2> 자기소개 </h2>
-          <h3> 이름 : {man.name}</h3>
-          <h3> 나이 : {man.age}</h3>
+          <h3> 이름 : {sival.name}</h3>
+          <h3> 나이 : {sival.age}</h3>
           <hr />
         </div>
       ))}

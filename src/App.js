@@ -20,20 +20,20 @@ const App = () => {
     <div>
       {
         // <PropsEx />
-        // <MapFnEx></MapFnEx>
+        //<MapFnEx></MapFnEx>
         // <IntroEx />
         // <PageEx />
-        // <Ex05 />
-        // <Ex06 />
+        <Ex05 />
+        //<Ex06 />
         // <Ex07 />
         // <Ex08 />
-        // <Ex09 />
+        //<Ex09 />
         // <Ex11 />
         //<Ex12 />
         //<Ex13 />
         //<Ex14 />
         //<Application />
-        <Example24 />
+        //<Example24 />
       }
     </div>
   );
