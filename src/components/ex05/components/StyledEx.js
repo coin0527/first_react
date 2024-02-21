@@ -4,7 +4,6 @@ const Box = styled.div`
   width: 300px;
   height: 300px;
   background-color: ${(props) => props.$bgColor};
-  /* props => props.까지는 고정임. 뒤 객체는 상황에 따라 다름 */
 `;
 
 const Box2 = styled.div`
