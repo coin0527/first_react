@@ -23,8 +23,8 @@ const App = () => {
         //<MapFnEx></MapFnEx>
         // <IntroEx />
         // <PageEx />
-        <Ex05 />
-        //<Ex06 />
+        //<Ex05 />
+        <Ex06 />
         // <Ex07 />
         // <Ex08 />
         //<Ex09 />
