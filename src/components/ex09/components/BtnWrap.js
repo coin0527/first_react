@@ -24,6 +24,7 @@ const SBtnWrap = styled.ul`
     justify-content: center;
     align-items: center;
     color: #333;
+    transform: translate();
   }
 `;
 
