@@ -25,6 +25,7 @@ export const Event02Ex = () => {
   return (
     <div>
       <Box $bg={bgColor} onClick={onClickBox}></Box>
+      {/* 이벤트 박스 */}
     </div>
   );
 };
